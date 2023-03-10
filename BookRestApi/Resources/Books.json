@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "Title": "1984",
+    "ReleaseDate": "1949-06-08T00:00:00",
+    "Author": "George Orwell"
+  },
+  {
+    "Id": 2,
+    "Title": "Brave New World",
+    "ReleaseDate": "1932-05-20T00:00:00",
+    "Author": "Aldous Huxley"
+  },
+  {
+    "Id": 3,
+    "Title": "Fahrenheit 451",
+    "ReleaseDate": "1953-10-19T00:00:00",
+    "Author": "Ray Bradbury"
+  },
+  {
+    "Id": 4,
+    "Title": "Dune",
+    "ReleaseDate": "1965-08-01T00:00:00",
+    "Author": "Frank Herbert"
+  },
+  {
+    "Id": 5,
+    "Title": "Neuromancer",
+    "ReleaseDate": "1984-07-01T00:00:00",
+    "Author": "William Gibson"
+  },
+  {
+    "Id": 6,
+    "Title": "Snow Crash",
+    "ReleaseDate": "1992-06-02T00:00:00",
+    "Author": "Neal Stephenson"
+  },
+  {
+    "Id": 7,
+    "Title": "The War of the Worlds",
+    "ReleaseDate": "1898-01-01T00:00:00",
+    "Author": "H.G. Wells"
+  },
+  {
+    "Id": 8,
+    "Title": "The Time Machine",
+    "ReleaseDate": "1895-01-01T00:00:00",
+    "Author": "H.G. Wells"
+  },
+  {
+    "Id": 9,
+    "Title": "The Hitchhiker's Guide to the Galaxy",
+    "ReleaseDate": "1979-10-12T00:00:00",
+    "Author": "Douglas Adams"
+  },
+  {
+    "Id": 10,
+    "Title": "Ender's Game",
+    "ReleaseDate": "1985-08-15T00:00:00",
+    "Author": "Orson Scott Card"
+  },
+  {
+    "Id": 11,
+    "Title": "Foundation",
+    "ReleaseDate": "1951-05-01T00:00:00",
+    "Author": "Isaac Asimov"
+  },
+  {
+    "Id": 12,
+    "Title": "The Martian",
+    "ReleaseDate": "2011-09-27T00:00:00",
+    "Author": "Andy Weir"
+  },
+  {
+    "Id": 13,
+    "Title": "The Hunger Games",
+    "ReleaseDate": "2008-09-14T00:00:00",
+    "Author": "Suzanne Collins"
+  },
+  {
+    "Id": 14,
+    "Title": "Ready Player One",
+    "ReleaseDate": "2011-08-16T00:00:00",
+    "Author": "Ernest Cline"
+  },
+  {
+    "Id": 15,
+    "Title": "The Handmaid's Tale",
+    "ReleaseDate": "1985-09-01T00:00:00",
+    "Author": "Margaret Atwood"
+  },
+  {
+    "Id": 16,
+    "Title": "The Hitchhiker's Guide to the Galaxy",
+    "ReleaseDate": "1979-10-12T00:00:00",
+    "Author": "Douglas Adams"
+  },
+  {
+    "Id": 17,
+    "Title": "Red Rising",
+    "ReleaseDate": "2014-01-28T00:00:00",
+    "Author": "Pierce Brown"
+  },
+  {
+    "Id": 18,
+    "Title": "The Three-Body Problem",
+    "ReleaseDate": "2008-06-01T00:00:00",
+    "Author": "Liu Cixin"
+  },
+  {
+    "Id": 19,
+    "Title": "The Left Hand of Darkness",
+    "ReleaseDate": "1969-10-06T00:00:00",
+    "Author": "Ursula K. Le Guin"
+  },
+  {
+    "Id": 20,
+    "Title": "The Andromeda Strain",
+    "ReleaseDate": "1969-01-01T00:00:00",
+    "Author": "Michael Crichton"
+  }
+]
