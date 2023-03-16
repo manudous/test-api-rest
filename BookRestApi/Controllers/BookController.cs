@@ -33,27 +33,57 @@ namespace BookRestApi.Controllers
             return book;
         }
 
+        //[HttpPost]
+        //public ActionResult CreateBook(Book book)
+        //{
+        //    try
+        //    {
+        //        _bookRepository.AddBook(book);
+        //        return Ok();
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        return BadRequest(ex.Message);
+        //    }        
+        //}
+
+        //[HttpPut]
+        //public ActionResult UpdateBook(Book book)
+        //{
+        //    try
+        //    {
+        //        _bookRepository.UpdateBook(book);
+        //        return Ok();
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        return BadRequest(ex.Message);
+        //    }
+        //}
+
         [HttpPost]
         public ActionResult CreateBook(Book book)
         {
             try
             {
-                _bookRepository.AddBook(book);
+                _bookRepository.SaveBook(book);
                 return Ok();
             }
             catch (Exception ex)
             {
 
                 return BadRequest(ex.Message);
-            }        
+            }
         }
 
-        [HttpPut]
-        public ActionResult UpdateBook(Book book)
+        [HttpPut("{id}")]
+        public ActionResult UpdateBook(int id, Book book)
         {
             try
             {
-                _bookRepository.UpdateBook(book);
+                _bookRepository.SaveBook(book, id);
                 return Ok();
             }
             catch (Exception ex)

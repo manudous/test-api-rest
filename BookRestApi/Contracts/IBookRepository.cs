@@ -9,6 +9,7 @@ namespace BookRestApi.Contracts
         Book GetBook(int id);
         void AddBook(Book book);
         void UpdateBook(Book book);
+        void SaveBook(Book book, int? id = null);
         void DeleteBook(int id);
     }
 }

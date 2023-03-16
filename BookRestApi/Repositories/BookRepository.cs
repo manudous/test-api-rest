@@ -55,6 +55,22 @@ namespace BookRestApi.Repositories
             UpdateBooks(books);
         }
 
+        public void SaveBook(Book book, int id)
+        {
+            var books = GetBooks();
+            var existBook = books.Exists(b => b.Id == book.Id);
+            if (existBook)
+            {
+
+                if (existBook)
+                {
+                    throw new Exception("There is already a book with this Id");
+                }
+                books.Add(book);
+                UpdateBooks(books);
+            }
+        }
+
         public void UpdateBook(Book book)
         {
             var books = GetBooks();
