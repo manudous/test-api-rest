@@ -1,122 +1,122 @@
 [
   {
-    "Id": 1,
-    "Title": "1984",
-    "ReleaseDate": "1949-06-08T00:00:00",
-    "Author": "George Orwell"
+    "id": 1,
+    "title": "1984",
+    "releaseDate": "1949-06-08T00:00:00",
+    "author": "George Orwell"
   },
   {
-    "Id": 2,
-    "Title": "Brave New World",
-    "ReleaseDate": "1932-05-20T00:00:00",
-    "Author": "Aldous Huxley"
+    "id": 2,
+    "title": "Brave New World",
+    "releaseDate": "1932-05-20T00:00:00",
+    "author": "Aldous Huxley"
   },
   {
-    "Id": 3,
-    "Title": "Fahrenheit 451",
-    "ReleaseDate": "1953-10-19T00:00:00",
-    "Author": "Ray Bradbury"
+    "id": 3,
+    "title": "Fahrenheit 451",
+    "releaseDate": "1953-10-19T00:00:00",
+    "author": "Ray Bradbury"
   },
   {
-    "Id": 4,
-    "Title": "Dune",
-    "ReleaseDate": "1965-08-01T00:00:00",
-    "Author": "Frank Herbert"
+    "id": 4,
+    "title": "Dune",
+    "releaseDate": "1965-08-01T00:00:00",
+    "author": "Frank Herbert"
   },
   {
-    "Id": 5,
-    "Title": "Neuromancer",
-    "ReleaseDate": "1984-07-01T00:00:00",
-    "Author": "William Gibson"
+    "id": 5,
+    "title": "Neuromancer",
+    "releaseDate": "1984-07-01T00:00:00",
+    "author": "William Gibson"
   },
   {
-    "Id": 6,
-    "Title": "Snow Crash",
-    "ReleaseDate": "1992-06-02T00:00:00",
-    "Author": "Neal Stephenson"
+    "id": 6,
+    "title": "Snow Crash",
+    "releaseDate": "1992-06-02T00:00:00",
+    "author": "Neal Stephenson"
   },
   {
-    "Id": 7,
-    "Title": "The War of the Worlds",
-    "ReleaseDate": "1898-01-01T00:00:00",
-    "Author": "H.G. Wells"
+    "id": 7,
+    "title": "The War of the Worlds",
+    "releaseDate": "1898-01-01T00:00:00",
+    "author": "H.G. Wells"
   },
   {
-    "Id": 8,
-    "Title": "The Time Machine",
-    "ReleaseDate": "1895-01-01T00:00:00",
-    "Author": "H.G. Wells"
+    "id": 8,
+    "title": "The Time Machine",
+    "releaseDate": "1895-01-01T00:00:00",
+    "author": "H.G. Wells"
   },
   {
-    "Id": 9,
-    "Title": "The Hitchhiker's Guide to the Galaxy",
-    "ReleaseDate": "1979-10-12T00:00:00",
-    "Author": "Douglas Adams"
+    "id": 9,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "releaseDate": "1979-10-12T00:00:00",
+    "author": "Douglas Adams"
   },
   {
-    "Id": 10,
-    "Title": "Ender's Game",
-    "ReleaseDate": "1985-08-15T00:00:00",
-    "Author": "Orson Scott Card"
+    "id": 10,
+    "title": "el retorno del manue",
+    "releaseDate": "2023-03-19T00:00:00",
+    "author": "manolito golden"
   },
   {
-    "Id": 11,
-    "Title": "Foundation",
-    "ReleaseDate": "1951-05-01T00:00:00",
-    "Author": "Isaac Asimov"
+    "id": 11,
+    "title": "Foundation",
+    "releaseDate": "1951-05-01T00:00:00",
+    "author": "Isaac Asimov"
   },
   {
-    "Id": 12,
-    "Title": "The Martian",
-    "ReleaseDate": "2011-09-27T00:00:00",
-    "Author": "Andy Weir"
+    "id": 12,
+    "title": "The Martian",
+    "releaseDate": "2011-09-27T00:00:00",
+    "author": "Andy Weir"
   },
   {
-    "Id": 13,
-    "Title": "The Hunger Games",
-    "ReleaseDate": "2008-09-14T00:00:00",
-    "Author": "Suzanne Collins"
+    "id": 13,
+    "title": "The Hunger Games",
+    "releaseDate": "2008-09-14T00:00:00",
+    "author": "Suzanne Collins"
   },
   {
-    "Id": 14,
-    "Title": "Ready Player One",
-    "ReleaseDate": "2011-08-16T00:00:00",
-    "Author": "Ernest Cline"
+    "id": 14,
+    "title": "Ready Player One",
+    "releaseDate": "2011-08-16T00:00:00",
+    "author": "Ernest Cline"
   },
   {
-    "Id": 15,
-    "Title": "The Handmaid's Tale",
-    "ReleaseDate": "1985-09-01T00:00:00",
-    "Author": "Margaret Atwood"
+    "id": 15,
+    "title": "The Handmaid's Tale",
+    "releaseDate": "1985-09-01T00:00:00",
+    "author": "Margaret Atwood"
   },
   {
-    "Id": 16,
-    "Title": "The Hitchhiker's Guide to the Galaxy",
-    "ReleaseDate": "1979-10-12T00:00:00",
-    "Author": "Douglas Adams"
+    "id": 16,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "releaseDate": "1979-10-12T00:00:00",
+    "author": "Douglas Adams"
   },
   {
-    "Id": 17,
-    "Title": "Red Rising",
-    "ReleaseDate": "2014-01-28T00:00:00",
-    "Author": "Pierce Brown"
+    "id": 17,
+    "title": "Red Rising",
+    "releaseDate": "2014-01-28T00:00:00",
+    "author": "Pierce Brown"
   },
   {
-    "Id": 18,
-    "Title": "The Three-Body Problem",
-    "ReleaseDate": "2008-06-01T00:00:00",
-    "Author": "Liu Cixin"
+    "id": 18,
+    "title": "The Three-Body Problem",
+    "releaseDate": "2008-06-01T00:00:00",
+    "author": "Liu Cixin"
   },
   {
-    "Id": 19,
-    "Title": "The Left Hand of Darkness",
-    "ReleaseDate": "1969-10-06T00:00:00",
-    "Author": "Ursula K. Le Guin"
+    "id": 19,
+    "title": "The Left Hand of Darkness",
+    "releaseDate": "1969-10-06T00:00:00",
+    "author": "Ursula K. Le Guin"
   },
   {
-    "Id": 20,
-    "Title": "The Andromeda Strain",
-    "ReleaseDate": "1969-01-01T00:00:00",
-    "Author": "Michael Crichton"
+    "id": 20,
+    "title": "prueba libro",
+    "releaseDate": "1985-04-20T00:00:00",
+    "author": "manolito golden"
   }
 ]

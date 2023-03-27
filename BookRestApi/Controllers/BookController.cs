@@ -17,13 +17,13 @@ namespace BookRestApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Book>> Get()
+        public ActionResult<List<BookApiModel>> Get()
         {
             return _bookRepository.GetBooks();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Book> GetBook(int id) 
+        public ActionResult<BookApiModel> GetBook(string id) 
         {
             var book = _bookRepository.GetBook(id);
             if (book == null)
@@ -34,11 +34,11 @@ namespace BookRestApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateBook(Book book)
+        public ActionResult CreateBook(BookApiModel book)
         {
             try
             {
-                _bookRepository.AddBook(book);
+                _bookRepository.SaveBook(book);
                 return Ok();
             }
             catch (Exception ex)
@@ -48,12 +48,12 @@ namespace BookRestApi.Controllers
             }        
         }
 
-        [HttpPut]
-        public ActionResult UpdateBook(Book book)
+        [HttpPut("{id}")]
+        public ActionResult UpdateBook(BookApiModel book)
         {
             try
             {
-                _bookRepository.UpdateBook(book);
+                _bookRepository.SaveBook(book);
                 return Ok();
             }
             catch (Exception ex)
@@ -64,7 +64,7 @@ namespace BookRestApi.Controllers
         }
 
         [HttpDelete]
-        public ActionResult DeleteBook(int id)
+        public ActionResult DeleteBook(string id)
         {
             try
             {
