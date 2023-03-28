@@ -5,9 +5,9 @@ namespace BookRestApi.Contracts
 {
     public interface IBookRepository
     {
-        List<BookApiModel> GetBooks();
-        BookApiModel GetBook(string id);
-        void SaveBook(BookApiModel book);
-        void DeleteBook(string id);
+        public List<BookApiModel> GetBookList(int? page, int? pageSize);
+        public BookApiModel GetBook(string id);
+        public void SaveBook(BookApiModel book);
+        public void DeleteBook(string id);
     }
 }

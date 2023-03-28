@@ -8,22 +8,30 @@ namespace BookRestApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class booksController : ControllerBase
     {
         private readonly IBookRepository _bookRepository;
-        public BookController(IBookRepository bookRepository)
+        public booksController(IBookRepository bookRepository)
         {
             _bookRepository = bookRepository;
         }
 
         [HttpGet]
-        public ActionResult<List<BookApiModel>> Get()
+        public ActionResult<List<BookApiModel>> GetBookList([FromQuery] int? page, [FromQuery] int? pageSize)
         {
-            return _bookRepository.GetBooks();
+            try
+            {
+                var books = _bookRepository.GetBookList(page, pageSize);
+                return Ok(books);
+            }
+            catch (Exception)
+            {
+                return BadRequest("Error retrieving books");
+            }
         }
 
         [HttpGet("{id}")]
-        public ActionResult<BookApiModel> GetBook(string id) 
+        public ActionResult<BookApiModel> GetBook(string id)
         {
             var book = _bookRepository.GetBook(id);
             if (book == null)
@@ -34,7 +42,7 @@ namespace BookRestApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateBook(BookApiModel book)
+        public ActionResult CreateBook([FromBody] BookApiModel book)
         {
             try
             {
@@ -45,14 +53,16 @@ namespace BookRestApi.Controllers
             {
 
                 return BadRequest(ex.Message);
-            }        
+            }
         }
 
         [HttpPut("{id}")]
-        public ActionResult UpdateBook(BookApiModel book)
+        public ActionResult UpdateBook(string id, [FromBody] BookApiModel book)
         {
             try
             {
+                book.id = id;
+
                 _bookRepository.SaveBook(book);
                 return Ok();
             }
@@ -63,7 +73,7 @@ namespace BookRestApi.Controllers
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public ActionResult DeleteBook(string id)
         {
             try
@@ -76,7 +86,7 @@ namespace BookRestApi.Controllers
 
                 return BadRequest(ex.Message);
             }
-            
+
         }
     }
 }

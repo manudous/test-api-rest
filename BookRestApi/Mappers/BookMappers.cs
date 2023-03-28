@@ -10,7 +10,7 @@ namespace BookRestApi.Mappers
         {
             return new BookModel
             {
-                id = int.Parse(bookApiModel.id),
+                id = string.IsNullOrEmpty(bookApiModel.id) ? Guid.NewGuid() : Guid.Parse(bookApiModel.id),
                 title = bookApiModel.title,
                 releaseDate = DateTime.Parse(bookApiModel.releaseDate),
                 author = bookApiModel.author

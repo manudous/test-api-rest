@@ -13,38 +13,35 @@ namespace BookRestApi.Repositories
     {
         const string JSON_PATH = @"C:\Users\manud\Source\Repos\test-api-rest\BookRestApi\Resources\Books.json";
 
-        public List<BookApiModel> GetBooks()
+        public List<BookApiModel> GetBookList(int? page, int? pageSize)
         {
             try
             {
                 var booksFromFile = GetBooksFromFile();
                 List<BookApiModel> books = BookMappers.MapBookModelListToBookApiModelList(JsonConvert.DeserializeObject<List<BookModel>>(booksFromFile));
+
+                if (page.HasValue && pageSize.HasValue && page.Value > 0 && pageSize.Value > 0)
+                {
+                    books = books.Skip((page.Value - 1) * pageSize.Value).Take(pageSize.Value).ToList();
+                }
                 return books;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                throw new Exception("Error retrieving book list", ex);
             }
         }
 
-        public BookApiModel GetBook(string id)
+        public BookApiModel GetBook(string bookId)
         {
-            try
-            {
-                var books = GetBooks();
-                var book = books.FirstOrDefault(b => b.id == id);
-                return book;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            var books = GetBookList(null, null);
+            var book = books.FirstOrDefault(b => b.id == bookId);
+            return book;
         }
 
         public void AddBook(BookApiModel book)
         {
-            var books = GetBooks();
+            var books = GetBookList(null, null);
             var existBook = books.Exists(b => b.id == book.id);
 
             if (existBook)
@@ -57,7 +54,7 @@ namespace BookRestApi.Repositories
 
         public void UpdateBook(BookApiModel book)
         {
-            var books = GetBooks();
+            var books = GetBookList(null, null);
             var bookIndex = books.FindIndex(b => b.id == book.id);
 
             if (bookIndex < 0)
@@ -69,7 +66,7 @@ namespace BookRestApi.Repositories
 
         public void SaveBook(BookApiModel book)
         {
-            var books = GetBooks();
+            var books = GetBookList(null, null);
             var bookIndex = books.FindIndex(b => b.id == book.id);
 
             if (bookIndex < 0)
@@ -84,7 +81,7 @@ namespace BookRestApi.Repositories
 
         public void DeleteBook(string id)
         {
-            var books = GetBooks();
+            var books = GetBookList(null, null);
             var bookIndex = books.FindIndex(b => b.id == id);
 
             if (bookIndex < 0)
